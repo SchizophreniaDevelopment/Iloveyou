@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Simple Flask App</title>
+        <link rel="shortcut icon" href="{{url_for('static', filename='favicon.png')}}" type="image/x-icon">
+		<style>
+			button {
+				height:100%;
+				width:100%;
+			}
+		</style>
+    </head>
+    <body>
+        <button type="submit" onclick="const exampleSocket = new WebSocket('ws://localhost:8008')">Test</button>
+    </body>
+</html>
